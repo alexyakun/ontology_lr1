@@ -29,7 +29,7 @@
 		<cim:IdentifiedObject.mRID>e6240428-fe41-4cb9-80d2-52bd2bbe2c03</cim:IdentifiedObject.mRID>
 		<cim:IdentifiedObject.name>110кВ</cim:IdentifiedObject.name>
 		<cim:BaseVoltage.nominalVoltage>110.0</cim:BaseVoltage.nominalVoltage>
-	</cim:BaseVoltage>
+	</cim:BaseVoltage>V
 	<cim:BaseVoltage rdf:ID = "_9fd0eedd-2fbb-4160-86ba-5d577108df8d">
 		<cim:IdentifiedObject.mRID>9fd0eedd-2fbb-4160-86ba-5d577108df8d</cim:IdentifiedObject.mRID>
 		<cim:IdentifiedObject.name>10кВ</cim:IdentifiedObject.name>

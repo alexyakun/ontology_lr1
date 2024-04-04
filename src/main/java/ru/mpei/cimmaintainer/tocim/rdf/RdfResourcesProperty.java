@@ -1,12 +1,12 @@
-package ru.mpei.cimmaintainer.tocim.voltage;
+package ru.mpei.cimmaintainer.tocim.rdf;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 @Getter
 @AllArgsConstructor
-public class RDFResourcesProperty {
-    private final RDFResourcesType mRDI;
+public class RdfResourcesProperty {
+    private final RdfResourcesType mRDI;
     private final String name;
 
 }

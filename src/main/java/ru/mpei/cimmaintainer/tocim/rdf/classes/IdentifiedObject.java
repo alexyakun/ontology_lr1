@@ -1,18 +1,18 @@
-package ru.mpei.cimmaintainer.tocim.rdf.casses;
+package ru.mpei.cimmaintainer.tocim.rdf.classes;
 
-import ru.mpei.cimmaintainer.tocim.rdf.cimClasses;
-import ru.mpei.cimmaintainer.tocim.voltage.RDFResourcesProperty;
-import ru.mpei.cimmaintainer.tocim.voltage.RDFResourcesType;
-import ru.mpei.cimmaintainer.tocim.voltage.XmlNameSpace;
+import ru.mpei.cimmaintainer.tocim.rdf.RdfResourcesProperty;
+import ru.mpei.cimmaintainer.tocim.rdf.RdfResourcesType;
+import ru.mpei.cimmaintainer.tocim.rdf.NamespaceXml;
 
-public class IdentifiedObject extends RDFResourcesType {
+public class IdentifiedObject extends RdfResourcesType {
 //    private static RDFResourcesType type = cimClasses.identifiedObject;
-    public IdentifiedObject(XmlNameSpace nameSpace, String nameType) {
+    public IdentifiedObject(NamespaceXml nameSpace, String nameType) {
         super(nameSpace, nameType);
     }
 
-    public RDFResourcesProperty mRID = new RDFResourcesProperty(this,"mRID");
-    public RDFResourcesProperty name = new RDFResourcesProperty(this,"name");
+    public RdfResourcesProperty mRID = new RdfResourcesProperty(this,"mRID");
+    public RdfResourcesProperty name = new RdfResourcesProperty(this,"name");
+    public RdfResourcesProperty DiagramObjects = new RdfResourcesProperty(this, "DiagramObjects");
 
 
 }

@@ -1,9 +1,9 @@
 package ru.mpei.cimmaintainer.tocim.substation;
 
-import ru.mpei.cimmaintainer.tocim.RDFResourcesBuilder;
-import ru.mpei.cimmaintainer.tocim.RdfResource;
-import ru.mpei.cimmaintainer.tocim.rdf.cimClasses;
-import ru.mpei.cimmaintainer.tocim.voltage.RDFResourcesId;
+import ru.mpei.cimmaintainer.tocim.rdf.RdfResourcesBuilder;
+import ru.mpei.cimmaintainer.tocim.rdf.RdfResource;
+import ru.mpei.cimmaintainer.tocim.rdf.CimClasses;
+import ru.mpei.cimmaintainer.tocim.rdf.RdfResourcesId;
 import ru.nti.dtps.dto.scheme.RawSchemeDto;
 
 import java.util.List;
@@ -11,9 +11,9 @@ import java.util.List;
 public class Substation {
     public static List<RdfResource> convert(RawSchemeDto scheme){
         return scheme.getSubstations().stream()
-                .map(e -> new RDFResourcesBuilder(new RDFResourcesId(e.getId()), cimClasses.substation)
-                        .addDataProperty(cimClasses.identifiedObject.mRID, e.getId())
-                        .addDataProperty(cimClasses.identifiedObject.name, e.getName())
+                .map(e -> new RdfResourcesBuilder(new RdfResourcesId(e.getId()), CimClasses.substation)
+                        .addDataProperty(CimClasses.identifiedObject.mRID, e.getId())
+                        .addDataProperty(CimClasses.identifiedObject.name, e.getName())
                         .builder())
                 .toList();
     }

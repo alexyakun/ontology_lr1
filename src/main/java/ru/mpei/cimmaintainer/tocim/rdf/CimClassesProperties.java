@@ -1,8 +1,6 @@
 package ru.mpei.cimmaintainer.tocim.rdf;
 
-import ru.mpei.cimmaintainer.tocim.voltage.RDFResourcesProperty;
-
-public class cimClassesProperties {
-    public static RDFResourcesProperty identifiedObjectMRID= new RDFResourcesProperty(cimClasses.identifiedObject, "mRID");
-    public static RDFResourcesProperty identifiedObjectName= new RDFResourcesProperty(cimClasses.identifiedObject, "name");
+public class CimClassesProperties {
+    public static RdfResourcesProperty identifiedObjectMRID= new RdfResourcesProperty(CimClasses.identifiedObject, "mRID");
+    public static RdfResourcesProperty identifiedObjectName= new RdfResourcesProperty(CimClasses.identifiedObject, "name");
 }

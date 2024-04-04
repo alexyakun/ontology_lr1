@@ -1,33 +1,31 @@
-package ru.mpei.cimmaintainer.tocim;
-
-import ru.mpei.cimmaintainer.tocim.voltage.*;
+package ru.mpei.cimmaintainer.tocim.rdf;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class RDFResourcesBuilder {
-    private final RDFResourcesId id;
-    private final RDFResourcesType type;
-    private List<RDFDataProperty> dataProperties = new ArrayList<>();
-    private List<RDFObjectProperty> objectProperties = new ArrayList<>();
+public class RdfResourcesBuilder {
+    private final RdfResourcesId id;
+    private final RdfResourcesType type;
+    private List<RdfDataProperty> dataProperties = new ArrayList<>();
+    private List<RdfObjectProperty> objectProperties = new ArrayList<>();
 
 
-    public RDFResourcesBuilder(RDFResourcesId id, RDFResourcesType type) {
+    public RdfResourcesBuilder(RdfResourcesId id, RdfResourcesType type) {
         this.id = id;
         this.type = type;
     }
-    public RDFResourcesBuilder addDataProperty(
-            RDFResourcesProperty rdfDataProperty,
+    public RdfResourcesBuilder addDataProperty(
+            RdfResourcesProperty rdfDataProperty,
             String value
     ) {
-        this.dataProperties.add(new RDFDataProperty(rdfDataProperty, value));
+        this.dataProperties.add(new RdfDataProperty(rdfDataProperty, value));
         return this;
     }
-    public RDFResourcesBuilder addObjectProperty(
-            RDFResourcesProperty objectProperty,
-            RDFResourcesId resourceId
+    public RdfResourcesBuilder addObjectProperty(
+            RdfResourcesProperty objectProperty,
+            RdfResourcesId resourceId
     ) {
-        this.objectProperties.add(new RDFObjectProperty(objectProperty, resourceId));
+        this.objectProperties.add(new RdfObjectProperty(objectProperty, resourceId));
         return this;
     }
 
