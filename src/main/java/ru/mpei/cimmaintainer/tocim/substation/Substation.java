@@ -12,8 +12,8 @@ public class Substation {
     public static List<RdfResource> convert(RawSchemeDto scheme){
         return scheme.getSubstations().stream()
                 .map(e -> new RdfResourcesBuilder(new RdfResourcesId(e.getId()), CimClasses.substation)
-                        .addDataProperty(CimClasses.identifiedObject.mRID, e.getId())
-                        .addDataProperty(CimClasses.identifiedObject.name, e.getName())
+                        .addDataProperty(CimClasses.identifiedObjectCim.mRID, e.getId())
+                        .addDataProperty(CimClasses.identifiedObjectCim.name, e.getName())
                         .builder())
                 .toList();
     }

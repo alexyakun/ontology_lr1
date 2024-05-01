@@ -4,8 +4,8 @@ import ru.mpei.cimmaintainer.tocim.rdf.NamespaceXml;
 import ru.mpei.cimmaintainer.tocim.rdf.RdfResourcesProperty;
 import ru.mpei.cimmaintainer.tocim.rdf.RdfResourcesType;
 
-public class VoltageLevel extends RdfResourcesType {
-    public VoltageLevel(NamespaceXml nameSpace, String nameType) {
+public class VoltageLevelCim extends RdfResourcesType {
+    public VoltageLevelCim(NamespaceXml nameSpace, String nameType) {
         super(nameSpace, nameType);
     }
 

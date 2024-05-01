@@ -12,8 +12,8 @@ public class Line {
     public static List<RdfResource> convert(RawSchemeDto scheme){
         return scheme.getTransmissionLines().stream()
                 .map(e -> new RdfResourcesBuilder(new RdfResourcesId(e.getId()), CimClasses.line)
-                        .addDataProperty(CimClasses.identifiedObject.mRID, e.getId())
-                        .addDataProperty(CimClasses.identifiedObject.name, e.getName())
+                        .addDataProperty(CimClasses.identifiedObjectCim.mRID, e.getId())
+                        .addDataProperty(CimClasses.identifiedObjectCim.name, e.getName())
                         .builder())
                 .toList();
     }

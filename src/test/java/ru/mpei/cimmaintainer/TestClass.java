@@ -73,9 +73,9 @@ public class TestClass {
                 new RdfResourcesId("d55146be-1f7e-4113-94a2-08eed9e3bdf7"), CimClasses.line
         )
                 .addDataProperty(
-                        CimClasses.identifiedObject.mRID,
+                        CimClasses.identifiedObjectCim.mRID,
                         "d55146be-1f7e-4113-94a2-08eed9e3bdf7")
-                .addDataProperty(CimClasses.identifiedObject.name,
+                .addDataProperty(CimClasses.identifiedObjectCim.name,
                         "Transmission Line 1")
                 .builder();
         System.out.println(resourcesLine);

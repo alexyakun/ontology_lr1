@@ -13,8 +13,8 @@ public class RdfObjectProperty {
     public String toString() {
         StringBuilder stringBuilder = new StringBuilder();
 
-        if (resourceId.getId().contains("http")) {
-            stringBuilder.append("\t<")
+        if (!resourceId.getId().contains("http")) {
+            stringBuilder.append("\t\t<")
                     .append(type.getMRDI().getNameSpace().getAlias().toString()).append(":")
                     .append(type.getMRDI().getNameType())
                     .append(".")
@@ -23,7 +23,7 @@ public class RdfObjectProperty {
                     .append(resourceId)
                     .append("\"/>");
         } else {
-            stringBuilder.append("\t<")
+            stringBuilder.append("\t\t<")
                     .append(type.getMRDI().getNameSpace().getAlias().toString()).append(":")
                     .append(type.getMRDI().getNameType())
                     .append(".")

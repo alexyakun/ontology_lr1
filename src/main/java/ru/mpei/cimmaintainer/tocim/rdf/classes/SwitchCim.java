@@ -4,8 +4,8 @@ import ru.mpei.cimmaintainer.tocim.rdf.NamespaceXml;
 import ru.mpei.cimmaintainer.tocim.rdf.RdfResourcesProperty;
 import ru.mpei.cimmaintainer.tocim.rdf.RdfResourcesType;
 
-public class Switch extends RdfResourcesType {
-    public Switch(NamespaceXml nameSpace, String nameType) {
+public class SwitchCim extends RdfResourcesType {
+    public SwitchCim(NamespaceXml nameSpace, String nameType) {
         super(nameSpace, nameType);
     }
 

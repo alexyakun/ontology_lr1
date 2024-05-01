@@ -4,9 +4,9 @@ import ru.mpei.cimmaintainer.tocim.rdf.RdfResourcesProperty;
 import ru.mpei.cimmaintainer.tocim.rdf.RdfResourcesType;
 import ru.mpei.cimmaintainer.tocim.rdf.NamespaceXml;
 
-public class IdentifiedObject extends RdfResourcesType {
+public class IdentifiedObjectCim extends RdfResourcesType {
 //    private static RDFResourcesType type = cimClasses.identifiedObject;
-    public IdentifiedObject(NamespaceXml nameSpace, String nameType) {
+    public IdentifiedObjectCim(NamespaceXml nameSpace, String nameType) {
         super(nameSpace, nameType);
     }
 
